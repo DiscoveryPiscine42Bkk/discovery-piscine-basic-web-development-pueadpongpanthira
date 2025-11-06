@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Basics</title>
+	
+	<style>
+		body {
+			background-color: pink;
+		}
+		h1 {
+			color: white;
+			text-align: center;
+		}
+		img {
+			width: 100%;
+			height: 400px;
+			object-fit: cover;
+			object-position: 50% 50%;
+		}
+		a {
+			font-size: 0.8rem;
+			margin-top: 8px;
+		}
+		.container {
+			margin: 20px 10% 20px 10%
+		}
+		.content {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			gap: 10px;
+		}
+		.box {
+			display: flex;
+			flex: 1;
+			flex-direction: column;
+			align-items: center
+		}
+		.footer {
+			display: flex;
+			flex-direction: row;
+			justify-content: end;
+			font-family: monospace;
+			font-style: italic;
+			font-size: 16px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Piscine WEB !!</h1>
+	<div class="container content">
+		<div class="box">
+			<img
+				src="data:image/png;base64,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"
+				alt="ff-uniqlo">
+			<a href="https://www.uniqlo.com/th/th/special-feature/cp/polite-color?utm_source=google&utm_medium=cpc&utm_campaign=google_cpc_performance-max_purchase_seasonal-priority_2&gad_source=1&gad_campaignid=22822803330&gbraid=0AAAAAobDOVf4VTgre_WX9Xeiyvp5WwOpa&gclid=Cj0KCQiA5abIBhCaARIsAM3-zFWK-BX82Onu9h1Op_E8gQ_8YLoy-Hce3605TA3HiCw4pxa_kkdnJLIaAjfWEALw_wcB" target="_blank">
+				https://www.uniqlo.com/th/th/special-feature/cp/polite-color?utm_source=google&utm_medium=cpc&utm_campaign=google_cpc_performance-max_purchase_seasonal-priority_2&gad_source=1&gad_campaignid=22822803330&gbraid=0AAAAAobDOVf4VTgre_WX9Xeiyvp5WwOpa&gclid=Cj0KCQiA5abIBhCaARIsAM3-zFWK-BX82Onu9h1Op_E8gQ_8YLoy-Hce3605TA3HiCw4pxa_kkdnJLIaAjfWEALw_wcB
+			</a>
+		</div>
+		<div class="box">
+			<img
+				src="https://assets.adidas.com/videos/w_600,f_auto,q_auto/3c259bcd6e2441048460d2e0a3d32123_d98c/Samba_OG_ID0478_video.jpg"
+				alt="ff-adidas">
+			<a href="https://www.adidas.co.th/en/1111_sale?cm_mmc=AdieSEM_Google-_-adidas-SEAPAC-eCom-PPC-B-Brand-Other-Exact-TH_EN-SEAPAC-eCom-Paid_Search-_-adidas-Brand-Core-Brand_NOV11FW25_Convert-_-adidas-_-dv:eCom&cm_mmc1=TH&cm_mmc2=e&gclsrc=aw.ds&gad_source=1&gad_campaignid=319540371&gbraid=0AAAAAC0ynH1wUBOaPBN8QDz4BOB2WHYYn&gclid=Cj0KCQiA5abIBhCaARIsAM3-zFW6MpmgjdbIbD-qP0qPSCjaAcflur-qmqoGsAtwM0B0U2UYcPDuvBAaAoJ4EALw_wcB" target="_blank">
+				https://www.adidas.co.th/en/1111_sale?cm_mmc=AdieSEM_Google-_-adidas-SEAPAC-eCom-PPC-B-Brand-Other-Exact-TH_EN-SEAPAC-eCom-Paid_Search-_-adidas-Brand-Core-Brand_NOV11FW25_Convert-_-adidas-_-dv:eCom&cm_mmc1=TH&cm_mmc2=e&gclsrc=aw.ds&gad_source=1&gad_campaignid=319540371&gbraid=0AAAAAC0ynH1wUBOaPBN8QDz4BOB2WHYYn&gclid=Cj0KCQiA5abIBhCaARIsAM3-zFW6MpmgjdbIbD-qP0qPSCjaAcflur-qmqoGsAtwM0B0U2UYcPDuvBAaAoJ4EALw_wcB
+			</a>
+		</div>
+	</div>
+	<hr>
+	<div class="container footer">
+		<p>© tsomsa 2022</p>
+	</div>
+</body>
+</html>

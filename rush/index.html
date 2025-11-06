@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Resume</title>
+<style>
+  body {
+    font-family: "Fira Code", "SF Mono", "Menlo", monospace;
+    background-color: #fdfdfd;
+    color: black;
+    margin: 0;
+    text-align: center;
+  }
+  header {
+    padding: 40px 0 20px;
+    color: black;
+  }
+  h1 {
+    font-size: 2em;
+    letter-spacing: 1px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  .card {
+    width: 200px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    transition: transform 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .card h3 {
+    margin-top: 10px;
+    font-weight: normal;
+  }
+  footer {
+    margin-top: 60px;
+    font-size: 0.9em;
+    color: black;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1><b></b>Resume</h1>
+  <p>Click on each profile to see more details</p>
+</header>
+
+<div class="container">
+  <a href="ploy.html" style="text-decoration:none; color:inherit;">
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/66/3d/c7/663dc7bedaa5fa5f74e2d5bd036a3c72.jpg" alt="Ploy">
+      <h3><b>PLOY</b><br><small>Jirachya Mananititham</small></h3>
+    </div>
+  </a>
+  
+  <a href="aom.html" style="text-decoration:none; color:inherit;">
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/4a/82/fc/4a82fc3fef49066c723b499d0a870cf1.jpg" alt="Aom">
+      <h3><b>AOM</b><br><small>Panthira Pueadpong</small></h3>
+    </div>
+  </a>
+</div>
+
+<footer>
+  <p>© 2025 Portfolio Project</p>
+</footer>
+
+</body>
+</html>
